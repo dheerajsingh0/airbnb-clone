@@ -1,7 +1,7 @@
 module.exports = {
-  mode:'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: true, // or 'media' or 'class'
+  mode:"jit",
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: true, // or "media" or "class"
   theme: {
     extend: {},
   },
@@ -9,5 +9,5 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tailwind-scrollbar-hide')],
+    require("tailwind-scrollbar-hide")],
 }

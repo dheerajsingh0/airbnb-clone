@@ -1,5 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import {format} from "date-fns"
+import Header from "../components/Header";
 function Search(){
     const router =useRouter();
     const {location,startDate,endDate,noofGuests}=router.query;
@@ -11,6 +12,7 @@ function Search(){
 
     return(
         <div>
+               <Header/>
             <main className="flex">
                 <section>
                     <p className="text-xs"> 300+ stays - -  for {noofGuests}  guests</p>

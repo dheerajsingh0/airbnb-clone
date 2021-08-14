@@ -71,7 +71,7 @@ return(
     </header>
     <div className="sticky top-20 z-50 bg-white border-b-2" >
     {searchInput && (
-            <div className="flex  flex-col mx-auto">
+            <div className="flex md:max-w-2xl flex-col mx-auto">
                     <DateRangePicker
                     className="border scrollbar-hide overflow-x-auto"
                     ranges={[selectionRange]}

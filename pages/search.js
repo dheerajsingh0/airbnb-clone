@@ -5,8 +5,8 @@ function Search(){
     const {location,startDate,endDate,noofGuests}=router.query;
 
 
-    const formattedStartDate = format(new Date(startDate),"dd MMMM yy");
-    console.log(formattedStartDate);
+    // const formattedStartDate = format(new Date(startDate),"dd MMMM yy");
+    // console.log(formattedStartDate);
     
 
     return(

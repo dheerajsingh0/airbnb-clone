@@ -36,10 +36,10 @@ function Header(){
                  location:searchInput,
                  StartDate:startDate.toISOString(),
                  endDate:endDate.toISOString(),
-                 noOfGuests
-             }
-         })
-     }
+                 noOfGuests,
+             },
+         });
+     };
 return(
     <>
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10 ">

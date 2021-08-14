@@ -53,7 +53,7 @@ return(
             />
         </div>
         <div className="flex items-center border-2 rounded-full py-2 md:boder-2 md:shadow-sm hover:md:shadow-lg">
-            <input type="text" className="text-[10px] md:text-lg text-gray-600 placeholder-gray-400 rounded-full outline-none pl-5 bg-transparent flex-grow"
+            <input type="text" className="text-[8px] sm:text-sm md:text-lg text-gray-600 placeholder-gray-400 rounded-full outline-none pl-5 bg-transparent flex-grow"
             value={searchInput}
             onChange={(e)=> setSearchInput(e.target.value)}
             placeholder="Start Your Search"/>
@@ -67,10 +67,13 @@ return(
                 <UserCircleIcon className="h-6"/>
             </div>
         </div>
-        {searchInput && (
-            <div className="flex flex-col col-span-3 mx-auto">
+        
+    </header>
+    <div className="sticky top-20 z-50 bg-white border-b-2" >
+    {searchInput && (
+            <div className="flex  flex-col mx-auto">
                     <DateRangePicker
-
+                    className="border scrollbar-hide overflow-x-auto"
                     ranges={[selectionRange]}
                     minDate={new Date()}
                     rangeColors={["#FD5B61"]}
@@ -90,7 +93,8 @@ return(
                     </div>
             </div>
         )}
-    </header>
+    </div>
+    
     </>
 );
 }

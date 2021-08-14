@@ -53,7 +53,7 @@ return(
             />
         </div>
         <div className="flex items-center border-2 rounded-full py-2 md:boder-2 md:shadow-sm hover:md:shadow-lg">
-            <input type="text" className="text-sm md:text-lg text-gray-600 placeholder-gray-400 rounded-full outline-none pl-5 bg-transparent flex-grow"
+            <input type="text" className="text-[10px] md:text-lg text-gray-600 placeholder-gray-400 rounded-full outline-none pl-5 bg-transparent flex-grow"
             value={searchInput}
             onChange={(e)=> setSearchInput(e.target.value)}
             placeholder="Start Your Search"/>

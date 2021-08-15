@@ -6,7 +6,7 @@ import Router from "next/router"
 const progress=new ProgressBar({
   size:8,
   color:"#FE595E",
-  className:"z-50",
+  className:"z-100",
 
 });
 Router.events.on("routeChangeStart",progress.start);
